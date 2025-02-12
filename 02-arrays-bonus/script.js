@@ -32,8 +32,20 @@ console.log(reversedTeachers)     /* researched, done, not understood 100% */
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
 //lenght! 
 
-
-
+function longestString() {
+  let longestString = "";
+  for (let i = 0; i < teachers.length; i++) {
+    if (
+      typeof teachers[i] === "string" &&
+      teachers[i].length > longestString.length
+    ) {
+      longestString = teachers[i];
+    }
+  }
+  return longestString;
+}
+const longNames = longestString();
+console.log(longNames)
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
