@@ -25,10 +25,18 @@ console.log(longNames)      /*derp*/
 const index_of_Ed = teachers.indexOf(`Ed`)
 console.log(index_of_Ed)
 
+if (index_of_Ed !== -1) {
+  teachers.splice(index_of_Ed, 1);
+}
+
+console.log(teachers)   /*did but not undertstood 100%*/
+
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+
+const isFabioPresent = teachers.includes(`Fabio`);
+console.log(isFabioPresent)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
