@@ -10,15 +10,30 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers.reverse();
-console.log(reversedTeachers)
+
+// !! my first approach !!
+//      const reversedTeachers = teachers.reverse();
+//      console.log(reversedTeachers)
+
+//!! my second approach !!
+
+function reverseArray(teachers) {
+  let reversed = [];
+  for (let i = teachers.length - 1; i >= 0; i--) {
+    reversed.push(teachers[i]);
+  }
+  return reversed;
+}
+const reversedTeachers = reverseArray(teachers)
+console.log(reversedTeachers)     /* researched, done, not understood 100% */
 
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
+//lenght! 
 
-const longNames = teachers.values(length < 5);
-console.log(longNames)      /*derp*/
+
+
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
@@ -39,4 +54,5 @@ const isFabioPresent = teachers.includes(`Fabio`);
 console.log(isFabioPresent)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
+
 const teachersString = null;
